@@ -56,7 +56,7 @@ const checkAdmin = (req, res, next) => {
 // !!! Start of Routes !!! // 
 
 
-// Dashboard
+/* Dashboard
 app.get('/', (req, res) => {
   res.render('index', { user: req.session.user });
 });
@@ -241,7 +241,7 @@ app.post('/editpage/:patient_id', checkAuthenticated, checkAdmin, (req, res) => 
     }
     res.redirect('/patientList');
   });``
-});
+});*/
 
 // !!! Start of Delete Patient !!! JAZIRI ============================================================= //
 
@@ -259,7 +259,7 @@ app.post('/deletePatient/:patient_id', checkAuthenticated, checkAdmin, (req, res
   });
 });
 
-// !!! Start of Search Patient !!! NICHOLAS ============================================================= //
+/* !!! Start of Search Patient !!! NICHOLAS ============================================================= ///
 //Search patient
 app.get('/search', checkAuthenticated, (req, res) => {
   const patient_id = req.query.patient_id;
@@ -287,15 +287,15 @@ app.get('/search', checkAuthenticated, (req, res) => {
       users: req.session.user     
     });
   });
-});
+});*/
 
 
 
-// !!! Start of 404 Error Handling !!! //
+/* !!! Start of 404 Error Handling !!! //
 app.use((req, res) => {
   res.status(404).send('404 Not Found');
 });
 
 // Run server
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));*/
